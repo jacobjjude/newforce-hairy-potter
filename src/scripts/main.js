@@ -2,6 +2,7 @@
 import { makePottery } from './PotteryWheel.js';
 import { firePottery } from './Kiln.js';
 import { toSellOrNottoSell } from './PotteryCatalog.js';
+import { PotteryList } from './PotteryList.js';
 
 function randNum() {
 	let num = Math.floor(Math.random() * 10 + 1);
@@ -13,7 +14,7 @@ function randTemp() {
 	return temp;
 }
 
-let shapes = [ 'mug', 'plate', 'vase', 'pipe', 'coffee cup' ];
+let shapes = [ 'Mug', 'Plate', 'Vase', 'Pipe', 'Coffee Cup' ];
 let pottery = [];
 
 // Make 5 pieces of pottery at the wheel
@@ -32,6 +33,6 @@ for (const pot of pottery) {
 	let cracked = toSellOrNottoSell(pot);
 }
 
-console.log(pottery);
-
 // Invoke the component function that renders the HTML list
+const parentHTMLElement = document.querySelector('.potteryList');
+parentHTMLElement.innerHTML += PotteryList();
