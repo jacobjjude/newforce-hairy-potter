@@ -13,7 +13,7 @@ export const PotteryList = () => {
         <div class="pottery__price">
             Price is $${pot.price}
         </div>
-        </section
+        </section>
         `;
 	}
 	return htmlString;
