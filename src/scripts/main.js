@@ -1,7 +1,7 @@
 // Imports go first
 import { makePottery } from './PotteryWheel.js';
 import { firePottery } from './Kiln.js';
-import { toSellOrNottoSell } from './PotteryCatalog.js';
+import { toSellOrNotToSell } from './PotteryCatalog.js';
 import { PotteryList } from './PotteryList.js';
 
 function randNum() {
@@ -30,7 +30,7 @@ for (const pot of pottery) {
 
 // Determine which ones should be sold, and their price
 for (const pot of pottery) {
-	let cracked = toSellOrNottoSell(pot);
+	let cracked = toSellOrNotToSell(pot);
 }
 
 // Invoke the component function that renders the HTML list
